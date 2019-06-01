@@ -63,7 +63,7 @@ sreplace = '#define TMC2130_CURRENTS_H {20, 20, 35, 26}  // default holding curr
 
 sfind = '#define TMC2130_CURRENTS_R {16, 20, 35, 30}  // default running currents for all axes'
 sreplace = '#define TMC2130_CURRENTS_R {20, 20, 35, 26}  // default running currents for all axes'
-strreplace(replacefile,sfind,sreplace)
+#strreplace(replacefile,sfind,sreplace)
 
 #disable forced selftest in ./Prusa-Firmware/Firmware/variants/1_75mm_MK3-EINSy10a-E3Dv6full.h
 f = open('./Prusa-Firmware/Firmware/variants/1_75mm_MK3-EINSy10a-E3Dv6full.h', 'a+')
