@@ -5,6 +5,9 @@ then
 	echo "removing old directory"
 fi
 git clone https://github.com/prusa3d/Prusa-Firmware
+cd Prusa-Firmware
+git checkout tags/v3.7.1
+cd ..
 python3 skele_patch.py
 rc=$?
 if [ $rc = 1 ]
