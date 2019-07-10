@@ -1,4 +1,5 @@
 #!/bin/bash
+echo $#
 if [ $# < 2 ]
   then
     num1=980
@@ -15,7 +16,7 @@ then
 	rm -rf Prusa-Firmware
 	echo "removing old directory"
 fi
-git clone -b 'tags/v3.7.1' --single-branch --depth 1 https://github.com/prusa3d/Prusa-Firmware
+git clone -b 'v3.7.2' --single-branch --depth 1 https://github.com/prusa3d/Prusa-Firmware
 python3 skele_patch.py $num1 $num2
 rc=$?
 if [ $rc = 1 ]
