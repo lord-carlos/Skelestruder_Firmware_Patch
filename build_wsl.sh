@@ -1,6 +1,5 @@
 #!/bin/bash
-echo $#
-if [ $# < 2 ]
+if [ $# -lt 2 ]
   then
     num1=980
 	num2=16
